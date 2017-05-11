@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title_default }}</title>
+    <title>{{ page.title }} | {{ site.title_en }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -31,19 +31,26 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ site.title_default }}</h1>
-      <h2 class="project-tagline">{{ site.description_default }}</h2>
-        <a href="/en/index.html" class="btn">English</a>
-        <a href="/ja/index.html" class="btn">日本語</a>
-        <a href="/zh/index.html" class="btn">中文</a>
+      <h1 class="project-name"><a href="/en/index.html" style="color:white;text-decoration:none">{{ site.title_en }}</a></h1>
+      <h2 class="project-tagline">{{ site.description_en }}</h2>
+        <a href="/en/research.html#research" class="btn">Research</a>
+        <a href="/en/publications.html#publications" class="btn">Publications</a>
+        <a href="/en/members.html#current-members" class="btn">Members</a>
+        <a href="/en/about.html#about-isampr-lab" class="btn">About</a>
+        <a href="/en/join.html#join-the-lab" class="btn">Join</a>
+        <a href="/en/contact.html#contact" class="btn">Contact</a>
     </section>
 
     <section class="main-content">
       {{ content }}
 
+      <hr/>
+      <h3>Join us!</h3>
+      <p>We're always looking for enthusiastic students to join our lab. If you're interested in joining our lab, please have a look at <a href="/en/join.html#join-the-lab">Join</a>.
+
       <footer class="site-footer">
-        <span class="site-footer-owner">Language: <a href="/en/index.html">English</a> | <a href="/ja/index.html">日本語</a> | <a href="/zh/index.html">中文</a></span>
-        <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
+         <span class="site-footer-owner">Language: <a href="/en/index.html">English</a> | <a href="/ja/index.html">Japanese</a> | <a href="/zh/index.html">Chinese</a></span>
+         <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
       </footer>
     </section>
 

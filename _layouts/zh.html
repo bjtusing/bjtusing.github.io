@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="zh-ch">
   <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title_default }}</title>
+    <title>{{ page.title }} | {{ site.title_zh }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -31,19 +31,22 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ site.title_default }}</h1>
-      <h2 class="project-tagline">{{ site.description_default }}</h2>
-        <a href="/en/index.html" class="btn">English</a>
-        <a href="/ja/index.html" class="btn">日本語</a>
-        <a href="/zh/index.html" class="btn">中文</a>
+      <h1 class="project-name"><a href="/zh/index.html" style="color:white;text-decoration:none">{{ site.title_zh }}</a></h1>
+      <h2 class="project-tagline">{{ site.description_zh }}</h2>
+        <a href="/zh/research.html#section" class="btn">研究</a>
+        <a href="/zh/publications.html#section" class="btn">出版物</a>
+        <a href="/zh/members.html#section" class="btn">成员</a>
+        <a href="/zh/about.html#section" class="btn">关于实验室</a>
+        <a href="/zh/join.html#section" class="btn">加入</a>
+        <a href="/zh/contact.html#section" class="btn">联系我们</a>
     </section>
 
     <section class="main-content">
       {{ content }}
 
       <footer class="site-footer">
-        <span class="site-footer-owner">Language: <a href="/en/index.html">English</a> | <a href="/ja/index.html">日本語</a> | <a href="/zh/index.html">中文</a></span>
-        <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
+         <span class="site-footer-owner">语言: <a href="/en/index.html">英语</a> | <a href="/ja/index.html">日语</a> | <a href="/zh/index.html">中文</a></span>
+         <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
       </footer>
     </section>
 

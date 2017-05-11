@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja-jp">
   <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }} | {{ site.title_default }}</title>
+    <title>{{ page.title }} | {{ site.title_ja }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -31,19 +31,26 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">{{ site.title_default }}</h1>
-      <h2 class="project-tagline">{{ site.description_default }}</h2>
-        <a href="/en/index.html" class="btn">English</a>
-        <a href="/ja/index.html" class="btn">日本語</a>
-        <a href="/zh/index.html" class="btn">中文</a>
+      <h1 class="project-name"><a href="/ja/index.html" style="color:white;text-decoration:none">{{ site.title_ja }}</a></h1>
+      <h2 class="project-tagline">{{ site.description_ja }}</h2>
+        <a href="/ja/research.html#section" class="btn">研究</a>
+        <a href="/ja/publications.html#section" class="btn">論文</a>
+        <a href="/ja/members.html#section" class="btn">メンバー</a>
+        <a href="/ja/about.html#section" class="btn">研究室の紹介</a>
+        <a href="/ja/join.html#section" class="btn">ジョイン</a>
+        <a href="/ja/contact.html#section" class="btn">お問い合わせ</a>
     </section>
 
     <section class="main-content">
       {{ content }}
 
+      <hr />
+      <h3>一緒に研究をしませんか？</h3>
+      <p>本研究室では、やる気のある学生を常時募集しています。興味のある方は、<a href="/ja/join.html#section">ジョイン</a>を参照してください。</p>
+
       <footer class="site-footer">
-        <span class="site-footer-owner">Language: <a href="/en/index.html">English</a> | <a href="/ja/index.html">日本語</a> | <a href="/zh/index.html">中文</a></span>
-        <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
+         <span class="site-footer-owner">言語: <a href="/en/index.html">英語</a> | <a href="/ja/index.html">日本語</a> | <a href="/zh/index.html">中国語</a></span>
+         <span class="site-footer-owner">Copyright &copy; ISR Lab Members. All rights reserved.</span>
       </footer>
     </section>
 
